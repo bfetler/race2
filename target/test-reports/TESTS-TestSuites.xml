@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="0" name="RaceIntegrationTests" package="" tests="1" time="0.239" timestamp="2011-03-14T18:11:33">
+      <properties />
+
+      <testcase classname="RaceIntegrationTests" name="testRaceDatesBeforeToday" time="0.238" />
+
+      <system-out><![CDATA[--Output from testRaceDatesBeforeToday--
+
+Errors:
+org.springframework.validation.BeanPropertyBindingResult: 6 errors
+Field error in object 'race2.Race' on field 'city': rejected value [null]; codes [race2.Race.city.nullable.error.race2.Race.city,race2.Race.city.nullable.error.city,race2.Race.city.nullable.error.java.lang.String,race2.Race.city.nullable.error,race.city.nullable.error.race2.Race.city,race.city.nullable.error.city,race.city.nullable.error.java.lang.String,race.city.nullable.error,race2.Race.city.nullable.race2.Race.city,race2.Race.city.nullable.city,race2.Race.city.nullable.java.lang.String,race2.Race.city.nullable,race.city.nullable.race2.Race.city,race.city.nullable.city,race.city.nullable.java.lang.String,race.city.nullable,nullable.race2.Race.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class race2.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'race2.Race' on field 'cost': rejected value [null]; codes [race2.Race.cost.nullable.error.race2.Race.cost,race2.Race.cost.nullable.error.cost,race2.Race.cost.nullable.error.java.math.BigDecimal,race2.Race.cost.nullable.error,race.cost.nullable.error.race2.Race.cost,race.cost.nullable.error.cost,race.cost.nullable.error.java.math.BigDecimal,race.cost.nullable.error,race2.Race.cost.nullable.race2.Race.cost,race2.Race.cost.nullable.cost,race2.Race.cost.nullable.java.math.BigDecimal,race2.Race.cost.nullable,race.cost.nullable.race2.Race.cost,race.cost.nullable.cost,race.cost.nullable.java.math.BigDecimal,race.cost.nullable,nullable.race2.Race.cost,nullable.cost,nullable.java.math.BigDecimal,nullable]; arguments [cost,class race2.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'race2.Race' on field 'distance': rejected value [null]; codes [race2.Race.distance.nullable.error.race2.Race.distance,race2.Race.distance.nullable.error.distance,race2.Race.distance.nullable.error.java.math.BigDecimal,race2.Race.distance.nullable.error,race.distance.nullable.error.race2.Race.distance,race.distance.nullable.error.distance,race.distance.nullable.error.java.math.BigDecimal,race.distance.nullable.error,race2.Race.distance.nullable.race2.Race.distance,race2.Race.distance.nullable.distance,race2.Race.distance.nullable.java.math.BigDecimal,race2.Race.distance.nullable,race.distance.nullable.race2.Race.distance,race.distance.nullable.distance,race.distance.nullable.java.math.BigDecimal,race.distance.nullable,nullable.race2.Race.distance,nullable.distance,nullable.java.math.BigDecimal,nullable]; arguments [distance,class race2.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'race2.Race' on field 'name': rejected value [null]; codes [race2.Race.name.nullable.error.race2.Race.name,race2.Race.name.nullable.error.name,race2.Race.name.nullable.error.java.lang.String,race2.Race.name.nullable.error,race.name.nullable.error.race2.Race.name,race.name.nullable.error.name,race.name.nullable.error.java.lang.String,race.name.nullable.error,race2.Race.name.nullable.race2.Race.name,race2.Race.name.nullable.name,race2.Race.name.nullable.java.lang.String,race2.Race.name.nullable,race.name.nullable.race2.Race.name,race.name.nullable.name,race.name.nullable.java.lang.String,race.name.nullable,nullable.race2.Race.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class race2.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'race2.Race' on field 'startDate': rejected value [Mon Mar 07 11:11:33 PST 2011]; codes [race2.Race.startDate.validator.error.race2.Race.startDate,race2.Race.startDate.validator.error.startDate,race2.Race.startDate.validator.error.java.util.Date,race2.Race.startDate.validator.error,race.startDate.validator.error.race2.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,race2.Race.startDate.validator.invalid.race2.Race.startDate,race2.Race.startDate.validator.invalid.startDate,race2.Race.startDate.validator.invalid.java.util.Date,race2.Race.startDate.validator.invalid,race.startDate.validator.invalid.race2.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.race2.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class race2.Race,Mon Mar 07 11:11:33 PST 2011]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+Field error in object 'race2.Race' on field 'state': rejected value [null]; codes [race2.Race.state.nullable.error.race2.Race.state,race2.Race.state.nullable.error.state,race2.Race.state.nullable.error.java.lang.String,race2.Race.state.nullable.error,race.state.nullable.error.race2.Race.state,race.state.nullable.error.state,race.state.nullable.error.java.lang.String,race.state.nullable.error,race2.Race.state.nullable.race2.Race.state,race2.Race.state.nullable.state,race2.Race.state.nullable.java.lang.String,race2.Race.state.nullable,race.state.nullable.race2.Race.state,race.state.nullable.state,race.state.nullable.java.lang.String,race.state.nullable,nullable.race2.Race.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class race2.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'race2.Race' on field 'startDate': rejected value [Mon Mar 07 11:11:33 PST 2011]; codes [race2.Race.startDate.validator.error.race2.Race.startDate,race2.Race.startDate.validator.error.startDate,race2.Race.startDate.validator.error.java.util.Date,race2.Race.startDate.validator.error,race.startDate.validator.error.race2.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,race2.Race.startDate.validator.invalid.race2.Race.startDate,race2.Race.startDate.validator.invalid.startDate,race2.Race.startDate.validator.invalid.java.util.Date,race2.Race.startDate.validator.invalid,race.startDate.validator.invalid.race2.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.race2.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class race2.Race,Mon Mar 07 11:11:33 PST 2011]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+
+Code:
+race.startDate.validator.invalid
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRaceDatesBeforeToday--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="1" name="AdminFiltersTests" package="race2" tests="1" time="0.0050" timestamp="2011-03-14T18:11:17">
+      <properties />
+
+      <testcase classname="race2.AdminFiltersTests" name="testSomething" time="0.0020" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="2" name="FooterTagLibTests" package="race2" tests="1" time="0.063" timestamp="2011-03-14T18:11:17">
+      <properties />
+
+      <testcase classname="race2.FooterTagLibTests" name="testSomething" time="0.06" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="3" name="LoginTagLibTests" package="race2" tests="1" time="0.037" timestamp="2011-03-14T18:11:17">
+      <properties />
+
+      <testcase classname="race2.LoginTagLibTests" name="testSomething" time="0.032" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="4" name="RaceControllerTests" package="race2" tests="1" time="0.725" timestamp="2011-03-14T18:11:15">
+      <properties />
+
+      <testcase classname="race2.RaceControllerTests" name="testSomething" time="0.724" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="localhost.localdomain" id="5" name="RaceTests" package="race2" tests="2" time="0.275" timestamp="2011-03-14T18:11:15">
+      <properties />
+
+      <testcase classname="race2.RaceTests" name="testSomething" time="0.189" />
+
+      <testcase classname="race2.RaceTests" name="testInMiles" time="0.069">
+          <error message="No such property: inMiles for class: race2.Race" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: inMiles for class: race2.Race
+	at race2.RaceTests.testInMiles(RaceTests.groovy:20)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+--Output from testInMiles--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+--Output from testInMiles--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="6" name="RegistrationControllerTests" package="race2" tests="1" time="0.04" timestamp="2011-03-14T18:11:16">
+      <properties />
+
+      <testcase classname="race2.RegistrationControllerTests" name="testSomething" time="0.038" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="7" name="RegistrationTests" package="race2" tests="1" time="0.0050" timestamp="2011-03-14T18:11:15">
+      <properties />
+
+      <testcase classname="race2.RegistrationTests" name="testSomething" time="0.0030" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="8" name="RunnerControllerTests" package="race2" tests="1" time="0.014" timestamp="2011-03-14T18:11:16">
+      <properties />
+
+      <testcase classname="race2.RunnerControllerTests" name="testSomething" time="0.012" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="localhost.localdomain" id="9" name="RunnerTests" package="race2" tests="1" time="0.0050" timestamp="2011-03-14T18:11:16">
+      <properties />
+
+      <testcase classname="race2.RunnerTests" name="testSomething" time="0.0020" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="localhost.localdomain" id="10" name="UserControllerTests" package="race2" tests="4" time="0.327" timestamp="2011-03-14T18:11:17">
+      <properties />
+
+      <testcase classname="race2.UserControllerTests" name="testSomething" time="0.1" />
+
+      <testcase classname="race2.UserControllerTests" name="testIndex" time="0.0090" />
+
+      <testcase classname="race2.UserControllerTests" name="testShow" time="0.203" />
+
+      <testcase classname="race2.UserControllerTests" name="testAuthenticate" time="0.0080">
+          <error message="No such property: SHACodec for class: race2.UserControllerTests" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: SHACodec for class: race2.UserControllerTests
+	at race2.UserControllerTests$_setUp_closure2.doCall(UserControllerTests.groovy:13)
+	at race2.UserControllerTests.testAuthenticate(UserControllerTests.groovy:41)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+--Output from testIndex--
+--Output from testShow--
+--Output from testAuthenticate--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+--Output from testIndex--
+--Output from testShow--
+--Output from testAuthenticate--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="localhost.localdomain" id="11" name="UserTests" package="race2" tests="3" time="0.657" timestamp="2011-03-14T18:11:16">
+      <properties />
+
+      <testcase classname="race2.UserTests" name="testSomething" time="0.014" />
+
+      <testcase classname="race2.UserTests" name="testSimpleConstraints" time="0.619" />
+
+      <testcase classname="race2.UserTests" name="testUniqueConstraint" time="0.019">
+          <error message="No such property: SHACodec for class: race2.UserTests" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: SHACodec for class: race2.UserTests
+	at race2.UserTests$_setUp_closure2.doCall(UserTests.groovy:15)
+	at race2.UserTests.testUniqueConstraint(UserTests.groovy:42)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+--Output from testSimpleConstraints--
+--Output from testUniqueConstraint--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+--Output from testSimpleConstraints--
+--Output from testUniqueConstraint--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
